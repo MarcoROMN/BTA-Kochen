@@ -1,0 +1,112 @@
+/* Box Kalkulation von dem Rahmen aus für alle Elemnete */
+* {
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+}
+body {
+  margin: auto;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.navi {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-weight: bolder;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+.navi :hover,
+nav ul li a header a {
+  counter-reset: red;
+  background-color: aqua;
+  border: black;
+  transition: all 0.4s;
+}
+
+#navi {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  padding: 0 0 0 0;
+  list-style: none;
+}
+
+header nav {
+  display: none;
+}
+
+#navButton {
+  background-color: transparent;
+  border: none;
+}
+
+.show {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+header ul {
+  display: flex;
+}
+
+.backgroundPizza {
+  background-image: url("img/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h1,
+p {
+  color: white;
+  text-align: center;
+}
+
+.rezeptButton {
+  color: #374a67;
+  background-color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #374a67;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+}
+/* Ansicht der Geräte PC LAPTOP*/
+
+@media (min-width: 1140px) {
+  header nav {
+    display: block;
+  }
+  #navButton {
+    display: none;
+  }
+}
